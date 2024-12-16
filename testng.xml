@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Ecommerce Suite">	
+	  <!-- Listener for taking screenshots on test failure -->
+    <listeners>
+        <listener class-name="capstone.Ecommerce.ScreenshotListner"/>
+    </listeners>
+    <test name="URL Check Test">
+        <classes>
+			<class name="capstone.Ecommerce.Browsersetup"/>
+            <class name="capstone.Ecommerce.UrlTest"/>
+<!--            <class name="capstone.Ecommerce.CreateaccountTest"/>-->
+            <class name="capstone.Ecommerce.SignupTest"/>
+<!--            <class name="capstone.Ecommerce.ValidatelinksTest"/>-->
+<!--            <class name="capstone.Ecommerce.AdditemtocartTest"/>-->
+            <class name="capstone.Ecommerce.AddfromshopfromdepartmentTest"/>
+<!--            <class name="capstone.Ecommerce.AdditemfrombrandTest"/>-->
+            <class name="capstone.Ecommerce.CheckoutpageTest"/>
+<!--            <class name="capstone.Ecommerce.MenuvalidationTest"/>-->
+        </classes>
+    </test>
+</suite>
