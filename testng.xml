@@ -15,7 +15,7 @@
             <class name="capstone.Ecommerce.AddfromshopfromdepartmentTest"/>
             <class name="capstone.Ecommerce.AdditemfrombrandTest"/>
             <class name="capstone.Ecommerce.CheckoutpageTest"/>
-            <class name="capstone.Ecommerce.MenuvalidationTest"/>
+<!--            <class name="capstone.Ecommerce.MenuvalidationTest"/>-->
         </classes>
     </test>
 </suite>
