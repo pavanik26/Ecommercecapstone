@@ -17,8 +17,7 @@ public class Browsersetup {
         driver = new ChromeDriver();
         driver.get("https://www.bestbuy.com/");
         driver.manage().window().maximize();
-        //UrlCheckPage = new UrlCheck(driver);
-        
+            
     }
 	
 	

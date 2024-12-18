@@ -33,9 +33,9 @@ public class Validatelinks {
         wait = new WebDriverWait(driver, Duration.ofSeconds(10));  // Initialize after driver is assigned
     }
    
-     // Method to retrieve the links
-    public void validateFooterLinks() {
-    	//imgUS.click(); //must be clicked on running the test individually
+       // Method to retrieve the links
+      public void validateFooterLinks() {
+    	imgUS.click(); //must be clicked on running the test individually
     	 WebElement footerSection = driver.findElement(By.xpath("//div[@class='flex justify-content-start']"));
        List<WebElement> links = footerSection.findElements(By.tagName("a"));
 

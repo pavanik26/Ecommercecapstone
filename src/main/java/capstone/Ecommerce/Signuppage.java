@@ -54,7 +54,7 @@ public class Signuppage {
 		// Method to click signup first
 	    public void clickSignUp() {
 			// TODO Auto-generated method stub
-	    	//imgUS.click(); //must be clicked on running the test individually
+	    	imgUS.click(); //must be clicked on running the test individually
 	    	account.click();
 	       	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
 	    	wait.until(ExpectedConditions.elementToBeClickable(signUp));

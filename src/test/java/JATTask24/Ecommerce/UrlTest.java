@@ -1,8 +1,13 @@
-package capstone.Ecommerce;
+package JATTask24.Ecommerce;
+
 
 import org.testng.Assert;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+
+import capstone.Ecommerce.Browsersetup;
+import capstone.Ecommerce.ScreenshotListner;
+import capstone.Ecommerce.UrlCheck;
 
 @Listeners(ScreenshotListner.class)
 public class UrlTest {

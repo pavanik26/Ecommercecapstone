@@ -1,4 +1,5 @@
-package capstone.Ecommerce;
+package JATTask24.Ecommerce;
+
 
 import java.time.Duration;
 
@@ -7,6 +8,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+
+import capstone.Ecommerce.Additemfrombrand;
+import capstone.Ecommerce.Browsersetup;
+import capstone.Ecommerce.ScreenshotListner;
 
 @Listeners(ScreenshotListner.class)
 public class CheckoutpageTest {
@@ -19,7 +24,7 @@ public class CheckoutpageTest {
 	    public void beforeTest() {
 	        // Use the WebDriver from Browsersetup class
 	        driver = Browsersetup.driver;
-	        addItemFromBrandTestPage = new Additemfrombrand(driver);  // Initialize Createaccount page object
+	        addItemFromBrandTestPage = new Additemfrombrand(driver);  // Initialize Additemfrombrand page object
 	    }
 	
 	    @Test

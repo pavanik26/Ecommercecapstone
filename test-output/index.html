@@ -26,7 +26,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -93,7 +93,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
+                    <span class="method-stats">7 methods, 4 failed,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -104,7 +104,22 @@
                     <div class="method-list-content failed suite-Ecommerce_Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Ecommerce_Suite" title="capstone.Ecommerce.AdditemfrombrandTest" class="method navigator-link" hash-for-method="testAddProductFromMenu">testAddProductFromMenu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Ecommerce_Suite" title="capstone.Ecommerce.AddfromshopfromdepartmentTest" class="method navigator-link" hash-for-method="testAddProductFromMenu">testAddProductFromMenu</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Ecommerce_Suite" title="capstone.Ecommerce.CheckoutpageTest" class="method navigator-link" hash-for-method="testCheckOutAndPay">testCheckOutAndPay</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Ecommerce_Suite" title="capstone.Ecommerce.MenuvalidationTest" class="method navigator-link" hash-for-method="validateItemsFromMenu">validateItemsFromMenu</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Ecommerce_Suite -->
@@ -118,12 +133,12 @@
                     <div class="method-list-content passed suite-Ecommerce_Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Ecommerce_Suite" title="capstone.Ecommerce.AddfromshopfromdepartmentTest" class="method navigator-link" hash-for-method="testAddProductFromMenu">testAddProductFromMenu</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Ecommerce_Suite" title="capstone.Ecommerce.AdditemtocartTest" class="method navigator-link" hash-for-method="testAddProduct">testAddProduct</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Ecommerce_Suite" title="capstone.Ecommerce.SignupTest" class="method navigator-link" hash-for-method="testSignUp">testSignUp</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Ecommerce_Suite" title="capstone.Ecommerce.ValidatelinksTest" class="method navigator-link" hash-for-method="testFooterLinks">testFooterLinks</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -146,6 +161,49 @@
           <div class="suite-Ecommerce_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
+              <span class="class-name">capstone.Ecommerce.MenuvalidationTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="validateItemsFromMenu">
+                  </a> <!-- validateItemsFromMenu -->
+                  <span class="method-name">validateItemsFromMenu</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[normalize-space()=&apos;Menu&apos;]&quot;}
+  (Session info: chrome=128.0.6613.138)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.24.0&apos;, revision: &apos;748ffc9bc3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bdcb91a78dc6425cac4e4d0a7449e70a, findElement {value=//button[normalize-space()=&apos;Menu&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57933}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57933/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bdcb91a78dc6425cac4e4d0a7449e70a
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+	at capstone.Ecommerce.Menuvalidation.validateMenuItemsInDeals(Menuvalidation.java:46)
+	at capstone.Ecommerce.MenuvalidationTest.validateItemsFromMenu(MenuvalidationTest.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Ecommerce_Suite-class-failed -->
+          <div class="suite-Ecommerce_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
               <span class="class-name">capstone.Ecommerce.CheckoutpageTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -154,15 +212,68 @@
                   <a name="testCheckOutAndPay">
                   </a> <!-- testCheckOutAndPay -->
                   <span class="method-name">testCheckOutAndPay</span>
-                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;btn btn-lg btn-block btn-primary&quot; type=&quot;button&quot; data-track=&quot;... - Top&quot;&gt;Checkout&lt;/button&gt; is not clickable at point (1135, 531). Other element would receive the click: &lt;div class=&quot;container&quot; role=&quot;document&quot;&gt;...&lt;/div&gt;
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //span[contains(text(),&apos;Continue to Payment Information&apos;)]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at capstone.Ecommerce.Additemfrombrand.checkoutPage(Additemfrombrand.java:121)
+	at capstone.Ecommerce.CheckoutpageTest.testCheckOutAndPay(CheckoutpageTest.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[contains(text(),&apos;Continue to Payment Information&apos;)]&quot;}
+  (Session info: chrome=128.0.6613.138)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.24.0&apos;, revision: &apos;748ffc9bc3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bdcb91a78dc6425cac4e4d0a7449e70a, findElement {value=//span[contains(text(),&apos;Continue to Payment Information&apos;)], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57933}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57933/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bdcb91a78dc6425cac4e4d0a7449e70a
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 30 more
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Ecommerce_Suite-class-failed -->
+          <div class="suite-Ecommerce_Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">capstone.Ecommerce.AddfromshopfromdepartmentTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddProductFromMenu">
+                  </a> <!-- testAddProductFromMenu -->
+                  <span class="method-name">testAddProductFromMenu</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a aria-label=&quot;Cart, 2 items&quot; class=&quot;cart-link flex align-items-center&quot; data-lid=&quot;hdr_carticon&quot; href=&quot;https://www.bestbuy.com/cart&quot; title=&quot;Cart&quot;&gt;...&lt;/a&gt; is not clickable at point (1283, 35). Other element would receive the click: &lt;a aria-disabled=&quot;false&quot; class=&quot;c-button-link go-to-cart&quot; href=&quot;/cart&quot; role=&quot;button&quot; tabindex=&quot;0&quot; data-track=&quot;Attach Modal: Go to cart&quot;&gt;...&lt;/a&gt;
   (Session info: chrome=128.0.6613.138)
 Build info: version: &apos;4.24.0&apos;, revision: &apos;748ffc9bc3&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8302f0bf7e5b3b274380038ab4c34224, clickElement {id=f.D0DFAE6B8571510EC9894D2B61E8304A.d.8BD729F9C424A1FF3ABE777E4DA3FE80.e.620}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62276}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62276/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (8302f0bf7e5b3b274380038ab4c34224)] -&gt; xpath: //button[normalize-space()=&apos;Checkout&apos;]]
-Session ID: 8302f0bf7e5b3b274380038ab4c34224
+Command: [bdcb91a78dc6425cac4e4d0a7449e70a, clickElement {id=f.EADE1C3B77FA4A867AA514601B0A9EAD.d.E992EEEB29F9262F87901DAF953DFD84.e.776}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57933}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57933/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (bdcb91a78dc6425cac4e4d0a7449e70a)] -&gt; xpath: //a[contains(@class, &apos;cart-link&apos;)]]
+Session ID: bdcb91a78dc6425cac4e4d0a7449e70a
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -174,8 +285,8 @@ Session ID: 8302f0bf7e5b3b274380038ab4c34224
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
-	at capstone.Ecommerce.Additemfrombrand.checkoutPage(Additemfrombrand.java:122)
-	at capstone.Ecommerce.CheckoutpageTest.testCheckOutAndPay(CheckoutpageTest.java:28)
+	at capstone.Ecommerce.Addfromshopfromdepartment.verifyCart(Addfromshopfromdepartment.java:69)
+	at capstone.Ecommerce.AddfromshopfromdepartmentTest.testAddProductFromMenu(AddfromshopfromdepartmentTest.java:27)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 36 stack frames
 </div> <!-- stack-trace -->
@@ -183,10 +294,10 @@ Session ID: 8302f0bf7e5b3b274380038ab4c34224
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Ecommerce_Suite-class-failed -->
-          <div class="suite-Ecommerce_Suite-class-passed">
+          <div class="suite-Ecommerce_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">capstone.Ecommerce.AddfromshopfromdepartmentTest</span>
+              <img src="failed.png"/>
+              <span class="class-name">capstone.Ecommerce.AdditemfrombrandTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -194,25 +305,35 @@ Session ID: 8302f0bf7e5b3b274380038ab4c34224
                   <a name="testAddProductFromMenu">
                   </a> <!-- testAddProductFromMenu -->
                   <span class="method-name">testAddProductFromMenu</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;c-button-unstyled hamburger-menu-button&quot; type=&quot;button&quot; aria-controls=&quot;flyout-container&quot; aria-expanded=&quot;false&quot; aria-label=&quot;Menu&quot;&gt;...&lt;/button&gt; is not clickable at point (190, 35). Other element would receive the click: &lt;div class=&quot;c-overlay-backdrop&quot; aria-label=&quot;Additional Options&quot; data-testid=&quot;attach-modal-drawer-overlay-backdrop&quot; id=&quot;attach-modal-drawer-overlay-backdrop&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=128.0.6613.138)
+Build info: version: &apos;4.24.0&apos;, revision: &apos;748ffc9bc3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bdcb91a78dc6425cac4e4d0a7449e70a, clickElement {id=f.EADE1C3B77FA4A867AA514601B0A9EAD.d.E992EEEB29F9262F87901DAF953DFD84.e.822}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57933}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57933/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (bdcb91a78dc6425cac4e4d0a7449e70a)] -&gt; xpath: //button[normalize-space()=&apos;Menu&apos;]]
+Session ID: bdcb91a78dc6425cac4e4d0a7449e70a
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+	at capstone.Ecommerce.Additemfrombrand.searchProductFromBrand(Additemfrombrand.java:86)
+	at capstone.Ecommerce.AdditemfrombrandTest.testAddProductFromMenu(AdditemfrombrandTest.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Ecommerce_Suite-class-passed -->
-          <div class="suite-Ecommerce_Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">capstone.Ecommerce.SignupTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testSignUp">
-                  </a> <!-- testSignUp -->
-                  <span class="method-name">testSignUp</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Ecommerce_Suite-class-passed -->
+          </div> <!-- suite-Ecommerce_Suite-class-failed -->
           <div class="suite-Ecommerce_Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -224,6 +345,36 @@ Session ID: 8302f0bf7e5b3b274380038ab4c34224
                   <a name="testUrlCheck">
                   </a> <!-- testUrlCheck -->
                   <span class="method-name">testUrlCheck</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Ecommerce_Suite-class-passed -->
+          <div class="suite-Ecommerce_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">capstone.Ecommerce.AdditemtocartTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testAddProduct">
+                  </a> <!-- testAddProduct -->
+                  <span class="method-name">testAddProduct</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Ecommerce_Suite-class-passed -->
+          <div class="suite-Ecommerce_Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">capstone.Ecommerce.ValidatelinksTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testFooterLinks">
+                  </a> <!-- testFooterLinks -->
+                  <span class="method-name">testFooterLinks</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -245,9 +396,12 @@ Session ID: 8302f0bf7e5b3b274380038ab4c34224
     &lt;classes&gt;
       &lt;class name=&quot;capstone.Ecommerce.Browsersetup&quot;/&gt;
       &lt;class name=&quot;capstone.Ecommerce.UrlTest&quot;/&gt;
-      &lt;class name=&quot;capstone.Ecommerce.SignupTest&quot;/&gt;
+      &lt;class name=&quot;capstone.Ecommerce.ValidatelinksTest&quot;/&gt;
+      &lt;class name=&quot;capstone.Ecommerce.AdditemtocartTest&quot;/&gt;
       &lt;class name=&quot;capstone.Ecommerce.AddfromshopfromdepartmentTest&quot;/&gt;
+      &lt;class name=&quot;capstone.Ecommerce.AdditemfrombrandTest&quot;/&gt;
       &lt;class name=&quot;capstone.Ecommerce.CheckoutpageTest&quot;/&gt;
+      &lt;class name=&quot;capstone.Ecommerce.MenuvalidationTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- URL Check Test --&gt;
 &lt;/suite&gt; &lt;!-- Ecommerce Suite --&gt;
@@ -261,7 +415,7 @@ Session ID: 8302f0bf7e5b3b274380038ab4c34224
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">URL Check Test (5 classes)</span>
+                <span class="test-name">URL Check Test (8 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -287,28 +441,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testSignUp')
-data.setCell(0, 2, 'capstone.Ecommerce.SignupTest')
-data.setCell(0, 3, 44594);
+data.setCell(0, 1, 'testFooterLinks')
+data.setCell(0, 2, 'capstone.Ecommerce.ValidatelinksTest')
+data.setCell(0, 3, 124249);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testAddProductFromMenu')
-data.setCell(1, 2, 'capstone.Ecommerce.AddfromshopfromdepartmentTest')
-data.setCell(1, 3, 27916);
+data.setCell(1, 1, 'testCheckOutAndPay')
+data.setCell(1, 2, 'capstone.Ecommerce.CheckoutpageTest')
+data.setCell(1, 3, 29111);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'testUrlCheck')
-data.setCell(2, 2, 'capstone.Ecommerce.UrlTest')
-data.setCell(2, 3, 9484);
+data.setCell(2, 1, 'testAddProduct')
+data.setCell(2, 2, 'capstone.Ecommerce.AdditemtocartTest')
+data.setCell(2, 3, 29077);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testCheckOutAndPay')
-data.setCell(3, 2, 'capstone.Ecommerce.CheckoutpageTest')
-data.setCell(3, 3, 2948);
+data.setCell(3, 1, 'testAddProductFromMenu')
+data.setCell(3, 2, 'capstone.Ecommerce.AddfromshopfromdepartmentTest')
+data.setCell(3, 3, 26994);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testUrlCheck')
+data.setCell(4, 2, 'capstone.Ecommerce.UrlTest')
+data.setCell(4, 3, 10571);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testAddProductFromMenu')
+data.setCell(5, 2, 'capstone.Ecommerce.AdditemfrombrandTest')
+data.setCell(5, 3, 1465);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'validateItemsFromMenu')
+data.setCell(6, 2, 'capstone.Ecommerce.MenuvalidationTest')
+data.setCell(6, 3, 23);
 window.suiteTableData['Ecommerce_Suite']= { tableData: data, tableDiv: 'times-div-Ecommerce_Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 3 minutes</span>
               <div id="times-div-Ecommerce_Suite">
               </div> <!-- times-div-Ecommerce_Suite -->
             </div> <!-- times-div -->
@@ -344,49 +510,88 @@ return data;
               <div class="chronological-class-name">capstone.Ecommerce.UrlTest</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">testUrlCheck</span>
-                <span class="method-start">8353 ms</span>
+                <span class="method-start">7736 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
-              <div class="chronological-class-name">capstone.Ecommerce.SignupTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">capstone.Ecommerce.ValidatelinksTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">17846 ms</span>
+                <span class="method-start">18316 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">testSignUp</span>
-                <span class="method-start">17907 ms</span>
+                <span class="method-name">testFooterLinks</span>
+                <span class="method-start">18383 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">capstone.Ecommerce.AdditemtocartTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">142638 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">testAddProduct</span>
+                <span class="method-start">142645 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">capstone.Ecommerce.AddfromshopfromdepartmentTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">62504 ms</span>
+                <span class="method-start">171726 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">testAddProductFromMenu</span>
-                <span class="method-start">62530 ms</span>
+                <span class="method-start">171732 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">capstone.Ecommerce.AdditemfrombrandTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">199006 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testAddProductFromMenu</span>
+                <span class="method-start">199014 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">capstone.Ecommerce.CheckoutpageTest</div> <!-- chronological-class-name -->
               <div class="configuration-method before">
                 <span class="method-name">beforeTest</span>
-                <span class="method-start">90450 ms</span>
+                <span class="method-start">200820 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">testCheckOutAndPay</span>
-                <span class="method-start">90459 ms</span>
+                <span class="method-start">200822 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">capstone.Ecommerce.MenuvalidationTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">230187 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">validateItemsFromMenu</span>
+                <span class="method-start">230192 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">capstone.Ecommerce.Browsersetup</div> <!-- chronological-class-name -->
               <div class="configuration-suite after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">93999 ms</span>
+                <span class="method-start">230594 ms</span>
               </div> <!-- configuration-suite after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

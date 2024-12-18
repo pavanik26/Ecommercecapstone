@@ -45,38 +45,32 @@ public class Additemtocart {
     }
    
     
-	// Method to click signup first
+	// Method to search product by entering text in searchbox
     public void searchProduct() {
 		// TODO Auto-generated method stub   	
-    	imgUS.click();
+    	//imgUS.click(); //must be clicked on running the test individually
     	searchInput.sendKeys("laptop");    
     	searchBtn.click();
-        //wait.until(ExpectedConditions.presenceOfElementLocated(By.cssSelector(".sku-item")));  // Wait for product items to load
-
-        // Step 2: Click on the first product in the search results
-      
+              
 	}
 
-    // Method to enter first name
+    // Method to add searched product
     public void addProduct() {
 		// TODO Auto-generated method stub
-    	  //WebElement firstProduct = driver.findElement(By.xpath("(//div[contains(@class, 'sku-item')]//a)[1]"));  // Locate the first product link
-          //firstProduct.click(); 
-          
+    	          
        // Wait for the product page to load"
-          wait.until(ExpectedConditions.visibilityOf(addToCart));  // Wait for the 'Add to Cart' button
+          wait.until(ExpectedConditions.visibilityOf(addToCart)); // Wait for the 'Add to Cart' button
 
           addToCart.click();  // Click the 'Add to Cart' button
 	}
     
-    // Method to enter last name
+    // Method to verifycart after adding poduct
     public void verifyCart() {
 		// TODO Auto-generated method stub
     	cartIcon.click();  // Click the cart icon to view the cart
 
         // Wait for cart page to load
-        wait.until(ExpectedConditions.visibilityOf(cartItems));
-        
+        wait.until(ExpectedConditions.visibilityOf(cartItems));        
                 
     	String text = driver.findElement(By.xpath("//h2[@class='cart-item__title-heading']")).getText();
     	if(text.contains("Laptop"))

@@ -1,10 +1,15 @@
-package capstone.Ecommerce;
+package JATTask24.Ecommerce;
+
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+
+import capstone.Ecommerce.Browsersetup;
+import capstone.Ecommerce.ScreenshotListner;
+import capstone.Ecommerce.Signuppage;
 
 
 @Listeners(ScreenshotListner.class)

@@ -1,4 +1,5 @@
-package capstone.Ecommerce;
+package JATTask24.Ecommerce;
+
 
 import java.time.Duration;
 
@@ -7,6 +8,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+
+import capstone.Ecommerce.Browsersetup;
+import capstone.Ecommerce.ScreenshotListner;
+import capstone.Ecommerce.Validatelinks;
 
 @Listeners(ScreenshotListner.class)
 public class ValidatelinksTest {

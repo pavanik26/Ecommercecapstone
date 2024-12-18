@@ -9,19 +9,19 @@
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
 <tr><th colspan="8">Ecommerce Suite</th></tr>
-<tr><td><a href="#t0">URL Check Test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">1</td><td class="num">85,546</td><td></td><td></td></tr>
+<tr><td><a href="#t0">URL Check Test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">4</td><td class="num">222,740</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Ecommerce Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">URL Check Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">capstone.Ecommerce.CheckoutpageTest</td><td><a href="#m0">testCheckOutAndPay</a></td><td rowspan="1">1734352373102</td><td rowspan="1">2948</td></tr><tr><th colspan="4">URL Check Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">capstone.Ecommerce.AddfromshopfromdepartmentTest</td><td><a href="#m1">testAddProductFromMenu</a></td><td rowspan="1">1734352345173</td><td rowspan="1">27916</td></tr><tr class="passedodd"><td rowspan="1">capstone.Ecommerce.SignupTest</td><td><a href="#m2">testSignUp</a></td><td rowspan="1">1734352300550</td><td rowspan="1">44594</td></tr><tr class="passedeven"><td rowspan="1">capstone.Ecommerce.UrlTest</td><td><a href="#m3">testUrlCheck</a></td><td rowspan="1">1734352290996</td><td rowspan="1">9484</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Ecommerce Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">URL Check Test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">capstone.Ecommerce.AddfromshopfromdepartmentTest</td><td><a href="#m0">testAddProductFromMenu</a></td><td rowspan="1">1734511595927</td><td rowspan="1">26994</td></tr><tr class="failedodd"><td rowspan="1">capstone.Ecommerce.AdditemfrombrandTest</td><td><a href="#m1">testAddProductFromMenu</a></td><td rowspan="1">1734511623209</td><td rowspan="1">1465</td></tr><tr class="failedeven"><td rowspan="1">capstone.Ecommerce.CheckoutpageTest</td><td><a href="#m2">testCheckOutAndPay</a></td><td rowspan="1">1734511625017</td><td rowspan="1">29111</td></tr><tr class="failedodd"><td rowspan="1">capstone.Ecommerce.MenuvalidationTest</td><td><a href="#m3">validateItemsFromMenu</a></td><td rowspan="1">1734511654387</td><td rowspan="1">23</td></tr><tr><th colspan="4">URL Check Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">capstone.Ecommerce.AdditemtocartTest</td><td><a href="#m4">testAddProduct</a></td><td rowspan="1">1734511566840</td><td rowspan="1">29077</td></tr><tr class="passedodd"><td rowspan="1">capstone.Ecommerce.UrlTest</td><td><a href="#m5">testUrlCheck</a></td><td rowspan="1">1734511431931</td><td rowspan="1">10571</td></tr><tr class="passedeven"><td rowspan="1">capstone.Ecommerce.ValidatelinksTest</td><td><a href="#m6">testFooterLinks</a></td><td rowspan="1">1734511442578</td><td rowspan="1">124249</td></tr></tbody>
 </table>
-<h2>URL Check Test</h2><h3 id="m0">capstone.Ecommerce.CheckoutpageTest#testCheckOutAndPay</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;btn btn-lg btn-block btn-primary&quot; type=&quot;button&quot; data-track=&quot;... - Top&quot;&gt;Checkout&lt;/button&gt; is not clickable at point (1135, 531). Other element would receive the click: &lt;div class=&quot;container&quot; role=&quot;document&quot;&gt;...&lt;/div&gt;
+<h2>URL Check Test</h2><h3 id="m0">capstone.Ecommerce.AddfromshopfromdepartmentTest#testAddProductFromMenu</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a aria-label=&quot;Cart, 2 items&quot; class=&quot;cart-link flex align-items-center&quot; data-lid=&quot;hdr_carticon&quot; href=&quot;https://www.bestbuy.com/cart&quot; title=&quot;Cart&quot;&gt;...&lt;/a&gt; is not clickable at point (1283, 35). Other element would receive the click: &lt;a aria-disabled=&quot;false&quot; class=&quot;c-button-link go-to-cart&quot; href=&quot;/cart&quot; role=&quot;button&quot; tabindex=&quot;0&quot; data-track=&quot;Attach Modal: Go to cart&quot;&gt;...&lt;/a&gt;
   (Session info: chrome=128.0.6613.138)
 Build info: version: &apos;4.24.0&apos;, revision: &apos;748ffc9bc3&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8302f0bf7e5b3b274380038ab4c34224, clickElement {id=f.D0DFAE6B8571510EC9894D2B61E8304A.d.8BD729F9C424A1FF3ABE777E4DA3FE80.e.620}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:62276}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:62276/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (8302f0bf7e5b3b274380038ab4c34224)] -&gt; xpath: //button[normalize-space()=&apos;Checkout&apos;]]
-Session ID: 8302f0bf7e5b3b274380038ab4c34224
+Command: [bdcb91a78dc6425cac4e4d0a7449e70a, clickElement {id=f.EADE1C3B77FA4A867AA514601B0A9EAD.d.E992EEEB29F9262F87901DAF953DFD84.e.776}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57933}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57933/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (bdcb91a78dc6425cac4e4d0a7449e70a)] -&gt; xpath: //a[contains(@class, &apos;cart-link&apos;)]]
+Session ID: bdcb91a78dc6425cac4e4d0a7449e70a
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -33,12 +33,100 @@ Session ID: 8302f0bf7e5b3b274380038ab4c34224
 	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
 	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
 	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
-	at capstone.Ecommerce.Additemfrombrand.checkoutPage(Additemfrombrand.java:122)
-	at capstone.Ecommerce.CheckoutpageTest.testCheckOutAndPay(CheckoutpageTest.java:28)
+	at capstone.Ecommerce.Addfromshopfromdepartment.verifyCart(Addfromshopfromdepartment.java:69)
+	at capstone.Ecommerce.AddfromshopfromdepartmentTest.testAddProductFromMenu(AddfromshopfromdepartmentTest.java:27)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 ... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">capstone.Ecommerce.AddfromshopfromdepartmentTest#testAddProductFromMenu</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">capstone.Ecommerce.SignupTest#testSignUp</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">capstone.Ecommerce.UrlTest#testUrlCheck</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">capstone.Ecommerce.AdditemfrombrandTest#testAddProductFromMenu</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;button class=&quot;c-button-unstyled hamburger-menu-button&quot; type=&quot;button&quot; aria-controls=&quot;flyout-container&quot; aria-expanded=&quot;false&quot; aria-label=&quot;Menu&quot;&gt;...&lt;/button&gt; is not clickable at point (190, 35). Other element would receive the click: &lt;div class=&quot;c-overlay-backdrop&quot; aria-label=&quot;Additional Options&quot; data-testid=&quot;attach-modal-drawer-overlay-backdrop&quot; id=&quot;attach-modal-drawer-overlay-backdrop&quot;&gt;...&lt;/div&gt;
+  (Session info: chrome=128.0.6613.138)
+Build info: version: &apos;4.24.0&apos;, revision: &apos;748ffc9bc3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bdcb91a78dc6425cac4e4d0a7449e70a, clickElement {id=f.EADE1C3B77FA4A867AA514601B0A9EAD.d.E992EEEB29F9262F87901DAF953DFD84.e.822}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57933}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57933/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (bdcb91a78dc6425cac4e4d0a7449e70a)] -&gt; xpath: //button[normalize-space()=&apos;Menu&apos;]]
+Session ID: bdcb91a78dc6425cac4e4d0a7449e70a
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+	at capstone.Ecommerce.Additemfrombrand.searchProductFromBrand(Additemfrombrand.java:86)
+	at capstone.Ecommerce.AdditemfrombrandTest.testAddProductFromMenu(AdditemfrombrandTest.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">capstone.Ecommerce.CheckoutpageTest#testCheckOutAndPay</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: Proxy element for: DefaultElementLocator &apos;By.xpath: //span[contains(text(),&apos;Continue to Payment Information&apos;)]&apos; (tried for 10 second(s) with 500 milliseconds interval)
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+	at capstone.Ecommerce.Additemfrombrand.checkoutPage(Additemfrombrand.java:121)
+	at capstone.Ecommerce.CheckoutpageTest.testCheckOutAndPay(CheckoutpageTest.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+Caused by: org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[contains(text(),&apos;Continue to Payment Information&apos;)]&quot;}
+  (Session info: chrome=128.0.6613.138)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.24.0&apos;, revision: &apos;748ffc9bc3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bdcb91a78dc6425cac4e4d0a7449e70a, findElement {value=//span[contains(text(),&apos;Continue to Payment Information&apos;)], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57933}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57933/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bdcb91a78dc6425cac4e4d0a7449e70a
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.isDisplayed(Unknown Source)
+	at org.openqa.selenium.support.ui.ExpectedConditions.elementIfVisible(ExpectedConditions.java:304)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:290)
+	at org.openqa.selenium.support.ui.ExpectedConditions$10.apply(ExpectedConditions.java:287)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:656)
+	at org.openqa.selenium.support.ui.ExpectedConditions$23.apply(ExpectedConditions.java:652)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:203)
+	... 30 more
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">capstone.Ecommerce.MenuvalidationTest#validateItemsFromMenu</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//button[normalize-space()=&apos;Menu&apos;]&quot;}
+  (Session info: chrome=128.0.6613.138)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.24.0&apos;, revision: &apos;748ffc9bc3&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.9&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [bdcb91a78dc6425cac4e4d0a7449e70a, findElement {value=//button[normalize-space()=&apos;Menu&apos;], using=xpath}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 128.0.6613.138, chrome: {chromedriverVersion: 128.0.6613.137 (fe621c5aa2d..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:57933}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:57933/devtoo..., se:cdpVersion: 128.0.6613.138, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: bdcb91a78dc6425cac4e4d0a7449e70a
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:68)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at jdk.proxy2/jdk.proxy2.$Proxy15.click(Unknown Source)
+	at capstone.Ecommerce.Menuvalidation.validateMenuItemsInDeals(Menuvalidation.java:46)
+	at capstone.Ecommerce.MenuvalidationTest.validateItemsFromMenu(MenuvalidationTest.java:27)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 31 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">capstone.Ecommerce.AdditemtocartTest#testAddProduct</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">capstone.Ecommerce.UrlTest#testUrlCheck</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">capstone.Ecommerce.ValidatelinksTest#testFooterLinks</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

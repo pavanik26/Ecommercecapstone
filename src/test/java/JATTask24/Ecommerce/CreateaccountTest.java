@@ -1,4 +1,5 @@
-package capstone.Ecommerce;
+package JATTask24.Ecommerce;
+
 
 import java.time.Duration;
 
@@ -8,6 +9,10 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+
+import capstone.Ecommerce.Browsersetup;
+import capstone.Ecommerce.Createaccount;
+import capstone.Ecommerce.ScreenshotListner;
 
 @Listeners(ScreenshotListner.class)
 public class CreateaccountTest {
@@ -26,11 +31,8 @@ public class CreateaccountTest {
 	    @Test
 	    public void testCreateAccount() {	      
 	        // Perform actions
-	    	
-	    	//wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//span[@class='v-p-right-xxs line-clamp']")));
 	    	createAccountPage.clickAccount();	    	
-	        //wait.until(ExpectedConditions.elementToBeClickable(By.xpath("//a[text()='Create Account']")));
-	    	createAccountPage.enterFName("Testabc");
+	        createAccountPage.enterFName("Testabc");
 	    	createAccountPage.enterLName("Testabc");
 	    	createAccountPage.enterPassword("Testabc@12345");
 	    	createAccountPage.enterConfirmPassword("Testabc@12345");

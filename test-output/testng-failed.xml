@@ -6,12 +6,30 @@
   </listeners>
   <test thread-count="5" name="URL Check Test(failed)">
     <classes>
+      <class name="capstone.Ecommerce.MenuvalidationTest">
+        <methods>
+          <include name="beforeTest"/>
+          <include name="validateItemsFromMenu"/>
+        </methods>
+      </class> <!-- capstone.Ecommerce.MenuvalidationTest -->
       <class name="capstone.Ecommerce.CheckoutpageTest">
         <methods>
           <include name="beforeTest"/>
           <include name="testCheckOutAndPay"/>
         </methods>
       </class> <!-- capstone.Ecommerce.CheckoutpageTest -->
+      <class name="capstone.Ecommerce.AdditemfrombrandTest">
+        <methods>
+          <include name="testAddProductFromMenu"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- capstone.Ecommerce.AdditemfrombrandTest -->
+      <class name="capstone.Ecommerce.AddfromshopfromdepartmentTest">
+        <methods>
+          <include name="testAddProductFromMenu"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- capstone.Ecommerce.AddfromshopfromdepartmentTest -->
     </classes>
   </test> <!-- URL Check Test(failed) -->
 </suite> <!-- Failed suite [Ecommerce Suite] -->

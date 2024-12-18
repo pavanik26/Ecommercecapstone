@@ -56,7 +56,7 @@ public class Createaccount {
 	// Method to click signup first
     public void clickAccount() {
 		// TODO Auto-generated method stub   	
-    	imgUS.click();
+    	imgUS.click();  //must be clicked only for the first time on running entire test suite 
     	account.click();
        	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
     	wait.until(ExpectedConditions.elementToBeClickable(createAccountLink));
