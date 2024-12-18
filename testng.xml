@@ -8,8 +8,8 @@
         <classes>
 			<class name="capstone.Ecommerce.Browsersetup"/>
             <class name="capstone.Ecommerce.UrlTest"/>
-<!--            <class name="capstone.Ecommerce.CreateaccountTest"/>-->
-<!--            <class name="capstone.Ecommerce.SignupTest"/>-->
+           <class name="capstone.Ecommerce.CreateaccountTest"/>
+            <class name="capstone.Ecommerce.SignupTest"/>
             <class name="capstone.Ecommerce.ValidatelinksTest"/>
             <class name="capstone.Ecommerce.AdditemtocartTest"/>
             <class name="capstone.Ecommerce.AddfromshopfromdepartmentTest"/>
